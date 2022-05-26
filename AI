@@ -1,1 +1,27 @@
+import java.util.Scanner;
 
+public class Exercicio01 {
+    
+    public static void main(String[] args) {
+    
+        Scanner ent = new Scanner(System.in);
+        int nota1, nota2, nota3;
+        int media = 0;
+        
+            System.out.println("Digite a 1ª nota: ");
+            nota1 = ent.nextInt();
+            
+            System.out.println("Digite a 2ª nota: ");
+            nota2 = ent.nextInt();
+            
+            System.out.println("Digite a 3ª nota: ");
+            nota3 = ent.nextInt();
+  
+            media = (nota1 + nota2 + nota3) / 3;
+            System.out.println("A média do aluno é " + media);
+            
+            if (media >= 7){
+            System.out.println("Aprovado!")
+            
+            }else
+            System.out.println("Reprovado.")
